@@ -48,10 +48,16 @@ jsonschema==4.5.1
 jupyter==1.0.0
 jupyter-client==7.3.1
 jupyter-console==6.4.3
+jupyter-contrib-core==0.3.3
+jupyter-contrib-nbextensions==0.5.1
 jupyter-core==4.10.0
+jupyter-highlight-selected-word==0.2.0
+jupyter-latex-envs==1.4.6
+jupyter-nbextensions-configurator==0.4.1
 jupyterlab-pygments==0.2.2
 jupyterlab-widgets==1.1.0
 kiwisolver==1.4.2
+lxml==4.8.0
 MarkupSafe==2.1.1
 matplotlib==3.5.2
 matplotlib-inline==0.1.3
