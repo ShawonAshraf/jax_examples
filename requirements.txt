@@ -49,7 +49,7 @@ ipython==8.4.0
 ipython-genutils==0.2.0
 ipywidgets==7.7.0
 jax==0.3.14
-jaxlib @ https://whls.blob.core.windows.net/unstable/cuda111/jaxlib-0.3.7+cuda11.cudnn82-cp39-none-win_amd64.whl
+jaxlib @ https://whls.blob.core.windows.net/unstable/cuda111/jaxlib-0.3.7+cuda11.cudnn82-cp310-none-win_amd64.whl
 jedi==0.18.1
 Jinja2==3.1.2
 jmp==0.0.2
