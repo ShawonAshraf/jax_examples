@@ -52,6 +52,7 @@ ipython-genutils==0.2.0
 isort==5.10.1
 jax==0.3.24
 jaxlib==0.3.24+cuda11.cudnn82
+jaxopt==0.5.5
 jedi==0.18.1
 Jinja2==3.1.2
 jmp==0.0.2
