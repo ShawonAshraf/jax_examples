@@ -160,6 +160,6 @@ wandb==0.13.5
 wcwidth==0.2.5
 webencodings==0.5.1
 websocket-client==1.4.2
-Werkzeug==2.2.2
+Werkzeug==2.2.3
 xxhash==3.1.0
 yarl==1.8.1
