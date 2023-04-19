@@ -6,11 +6,12 @@ channels:
 dependencies:
   - _libgcc_mutex=0.1=conda_forge
   - _openmp_mutex=4.5=2_kmp_llvm
+  - autopep8=1.6.0=pyhd3eb1b0_1
   - brotlipy=0.7.0=py310h5764c6d_1005
   - bzip2=1.0.8=h7b6447c_0
   - c-ares=1.18.1=h7f98852_0
-  - ca-certificates=2022.12.7=ha878542_0
-  - certifi=2022.12.7=pyhd8ed1ab_0
+  - ca-certificates=2023.01.10=h06a4308_0
+  - certifi=2022.12.7=py310h06a4308_0
   - cffi=1.15.1=py310h255011f_3
   - charset-normalizer=2.1.1=pyhd8ed1ab_0
   - cryptography=39.0.2=py310h34c0648_0
@@ -47,6 +48,7 @@ dependencies:
   - pip=23.0.1=py310h06a4308_0
   - platformdirs=3.1.1=pyhd8ed1ab_0
   - pooch=1.7.0=pyhd8ed1ab_0
+  - pycodestyle=2.10.0=py310h06a4308_0
   - pycparser=2.21=pyhd8ed1ab_0
   - pyopenssl=23.0.0=pyhd8ed1ab_0
   - pysocks=1.7.1=pyha2e5f31_6
@@ -59,6 +61,7 @@ dependencies:
   - setuptools=65.6.3=py310h06a4308_0
   - sqlite=3.41.1=h5eee18b_0
   - tk=8.6.12=h1ccaba5_0
+  - toml=0.10.2=pyhd3eb1b0_0
   - typing-extensions=4.5.0=hd8ed1ab_0
   - typing_extensions=4.5.0=pyha770c72_0
   - tzdata=2022g=h04d1e81_0
