@@ -13,7 +13,7 @@ ven/
 # Byte-compiled / optimized / DLL files
 
 pip
-
+jaxenv/
 
 __pycache__/
 *.py[cod]
