@@ -83,6 +83,7 @@ matplotlib-inline==0.1.6
 mdurl==0.1.2
 mistune==3.0.2
 ml-dtypes==0.3.1
+mpmath==1.3.0
 msgpack==1.0.7
 multidict==6.0.4
 multiprocess==0.70.15
@@ -159,6 +160,7 @@ smmap==5.0.1
 sniffio==1.3.0
 soupsieve==2.5
 stack-data==0.6.3
+sympy==1.12
 tensorboard==2.15.1
 tensorboard-data-server==0.7.2
 tensorstore==0.1.51
@@ -168,6 +170,7 @@ tifffile==2023.12.9
 tinycss2==1.2.1
 tokenizers==0.15.0
 toolz==0.12.0
+torch==2.1.1+cpu
 tornado==6.4
 tqdm==4.66.1
 traitlets==5.14.0
