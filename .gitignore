@@ -2,7 +2,7 @@
 
 # dataset folders
 playground/review_polarity
-ven/
+venv/
 
 
 
@@ -11,9 +11,6 @@ ven/
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
-
-pip
-jaxenv/
 
 __pycache__/
 *.py[cod]
