@@ -3,7 +3,7 @@
 # dataset folders
 playground/review_polarity
 venv/
-
+data/
 
 
 # Created by https://www.toptal.com/developers/gitignore/api/python
