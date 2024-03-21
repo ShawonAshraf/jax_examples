@@ -19,7 +19,6 @@ certifi==2023.11.17
 cffi==1.16.0
 charset-normalizer==3.3.2
 chex==0.1.85
-clearml==1.14.1
 click==8.1.7
 colorama==0.4.6
 comm==0.2.1
@@ -204,6 +203,7 @@ webcolors==1.13
 webencodings==0.5.1
 websocket-client==1.7.0
 Werkzeug==3.0.1
+wheel==0.43.0
 widgetsnbextension==4.0.9
 xxhash==3.4.1
 yarl==1.9.4
