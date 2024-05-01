@@ -1,9 +1,16 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
-	"name": "Python3-GPU",
+	"name": "jax-examples-gpu",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"dockerFile": "../../devcontainer.Dockerfile",
+	"mounts": [
+		"source=${localEnv:HOME}/.cache/huggingface,target=/workspaces/.cache/huggingface,type=bind,consistency=cached"
+	],
+	"containerEnv": {
+		"HF_TOKEN": "${HF_TOKEN}",
+		"WANDB_API_KEY": "${WANDB_API_KEY}"
+	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {
@@ -25,7 +32,8 @@
 			"extensions": [
 				"ms-python.python",
 				"ms-toolsai.jupyter",
-				"tensorboard.tensorboard"
+				"tensorboard.tensorboard",
+				"charliermarsh.ruff"
 			]
 		}
 	},

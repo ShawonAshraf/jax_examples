@@ -1,8 +1,17 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
 {
-	"name": "Python3-CPU",
+	"name": "jax-examples-cpu",
 	"dockerFile": "../../devcontainer.Dockerfile",
+
+	"mounts": [
+		"source=${localEnv:HOME}/.cache/huggingface,target=/workspaces/.cache/huggingface,type=bind,consistency=cached"
+	],
+	"containerEnv": {
+		"HF_TOKEN": "${HF_TOKEN}",
+		"WANDB_API_KEY": "${WANDB_API_KEY}"
+	},
+
 
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
@@ -22,7 +31,8 @@
 			"extensions": [
 				"ms-python.python",
 				"ms-toolsai.jupyter",
-				"tensorBoard.tensorboard"
+				"tensorBoard.tensorboard",
+				"charliermarsh.ruff"
 			]
 		}
 	}
