@@ -7,9 +7,9 @@
 	"mounts": [
 		"source=${localEnv:HOME}/.cache/huggingface,target=/workspaces/.cache/huggingface,type=bind,consistency=cached"
 	],
-	"containerEnv": {
-		"HF_TOKEN": "${HF_TOKEN}",
-		"WANDB_API_KEY": "${WANDB_API_KEY}"
+	"remoteEnv": {
+		"HF_TOKEN": "${localEnv:HF_TOKEN}",
+		"WANDB_API_KEY": "${localEnv:WANDB_API_KEY}"
 	},
 
 
