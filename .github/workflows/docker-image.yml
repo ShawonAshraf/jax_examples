@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Devcontainer Image Build
 
 on:
   push:
