@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "jax-examples"
+version = "0.1.0"
+description = "examples showcasing how to use jax for machine learning"
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+jax = {extras = ["cuda12"], version = "^0.4.28"}
+einops = "^0.8.0"
+transformers = "^4.41.1"
+datasets = "^2.19.1"
+wandb = "^0.17.0"
+scikit-learn = "^1.5.0"
+scikit-image = "^0.23.2"
+torch = "^2.3.0"
+jax-dataloader = "^0.1.0"
+matplotlib = "^3.9.0"
+jupyter = "^1.0.0"
+pandas = "^2.2.2"
+tensorboard = "^2.16.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.4.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
