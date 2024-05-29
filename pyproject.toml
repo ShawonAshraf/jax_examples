@@ -2,7 +2,7 @@
 name = "jax-examples"
 version = "0.1.0"
 description = "examples showcasing how to use jax for machine learning"
-authors = ["Your Name <you@example.com>"]
+authors = ["Shawon Ashraf"]
 license = "MIT"
 readme = "README.md"
 
