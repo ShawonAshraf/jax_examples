@@ -3,7 +3,7 @@
 {
 	"name": "jax-examples-gpu",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"dockerFile": "../../devcontainer.Dockerfile",
+	"dockerFile": "../devcontainer.Dockerfile",
 	"mounts": [
 		"source=${localEnv:HOME}/.cache/huggingface,target=/workspaces/.cache/huggingface,type=bind,consistency=cached"
 	],
