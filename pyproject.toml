@@ -5,7 +5,13 @@ description = "examples showcasing how to use jax for machine learning"
 authors = ["Shawon Ashraf"]
 license = "MIT"
 readme = "README.md"
-package-mode = false
+packages = [
+    { include = "utils", from = "." }
+]
+
+[tool.poetry.scripts]
+log_device = "utils.device:log_device"
+sanity_check = "utils.sanity_check:main"
 
 [tool.poetry.dependencies]
 python = "^3.12"
@@ -22,6 +28,7 @@ matplotlib = "^3.9.0"
 jupyter = "^1.0.0"
 pandas = "^2.2.2"
 tensorboard = "^2.16.2"
+loguru = "^0.7.2"
 
 
 [tool.poetry.group.dev.dependencies]
