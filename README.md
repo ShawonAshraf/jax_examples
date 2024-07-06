@@ -18,4 +18,4 @@ poetry install --with dev
 jupyter lab
 ```
 
-Alternatively, you can use vscode or  the provided `devcontainer` with vscode to run the project in a containerized environment.
+Alternatively, you can use vscode or  the provided `devcontainer` with vscode to run the project in a containerised environment.
