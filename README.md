@@ -2,7 +2,7 @@
 
 > Deep Learning examples using the Jax ecosystem of libraries
 
-[![Devcontainer](https://github.com/ShawonAshraf/jax_examples/actions/workflows/docker-image.yml/badge.svg)](https://github.com/ShawonAshraf/jax_examples/actions/workflows/docker-image.yml)
+[![jax-check](https://github.com/ShawonAshraf/jax_examples/actions/workflows/jax-check.yml/badge.svg?branch=main)](https://github.com/ShawonAshraf/jax_examples/actions/workflows/jax-check.yml)
 
 ## env setup
 
