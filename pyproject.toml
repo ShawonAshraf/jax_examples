@@ -5,6 +5,7 @@ description = "examples showcasing how to use jax for machine learning"
 authors = ["Shawon Ashraf"]
 license = "MIT"
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
