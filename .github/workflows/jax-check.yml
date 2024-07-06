@@ -1,0 +1,35 @@
+name: jax-check
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  check:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: ['3.12',]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install Poetry
+      uses: snok/install-poetry@v1.3.4
+    
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+          python-version: ${{ matrix.python-version }}
+    
+
+    - name: Install dependencies
+      run: poetry install
+
+    - name: Run Check Scripts
+      run: poetry run sanity_check
