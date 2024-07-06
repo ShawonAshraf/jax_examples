@@ -32,4 +32,4 @@ jobs:
       run: poetry install
 
     - name: Run Check Scripts
-      run: poetry run sanity_check
+      run: JAX_PLATFORMS=cpu poetry run sanity_check
