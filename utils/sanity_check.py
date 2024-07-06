@@ -1,4 +1,7 @@
+import os
+
 import jax
+from jax.lib import xla_bridge
 from loguru import logger
 
 
@@ -11,4 +14,11 @@ def main():
 
 
 if __name__ == "__main__":
+    device = xla_bridge.get_backend().platform
+
+    # especially for github runners
+    if device == "cpu":
+        logger.info("Setting JAX_PLATFORMS to cpu")
+        os.environ["JAX_PLATFORMS"] = "cpu"
+
     main()
