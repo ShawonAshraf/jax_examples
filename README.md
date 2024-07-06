@@ -10,3 +10,12 @@
 poetry shell
 poetry install --with dev
 ```
+
+## run jupyter lab
+
+```bash
+# inside the project root
+jupyter lab
+```
+
+Alternatively, you can use vscode or  the provided `devcontainer` with vscode to run the project in a containerized environment.
