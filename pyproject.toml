@@ -29,6 +29,11 @@ jupyter = "^1.0.0"
 pandas = "^2.2.2"
 tensorboard = "^2.16.2"
 loguru = "^0.7.2"
+ipython = "^8.26.0"
+flax = "^0.8.5"
+optax = "^0.2.2"
+brax = "^0.10.5"
+chex = "^0.1.86"
 
 
 [tool.poetry.group.dev.dependencies]
