@@ -2,7 +2,7 @@
 
 > Deep Learning examples using the Jax ecosystem of libraries
 
-[![jax-check](https://github.com/ShawonAshraf/jax_examples/actions/workflows/jax-check.yml/badge.svg?branch=main)](https://github.com/ShawonAshraf/jax_examples/actions/workflows/jax-check.yml)
+[![Build Status](https://shawonashraf.visualstudio.com/jax-examples/_apis/build/status%2FShawonAshraf.jax_examples?branchName=main)](https://shawonashraf.visualstudio.com/jax-examples/_build/latest?definitionId=13&branchName=main)
 
 ## env setup
 
