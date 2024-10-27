@@ -1,8 +1,3 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
 - main
 
@@ -15,5 +10,12 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- script: curl -sSL https://install.python-poetry.org | python3 - 
+  displayName: 'Install: Poetry'
+- script: poetry config virtualenvs.create false && poetry install
+  displayName: 'Install: Dependencies'
+- script: JAX_PLATFORMS=cpu poetry run sanity_check
+  displayName: 'Check: Jax Array Creation'
 - script: docker build . --file devcontainer.Dockerfile --tag experiments:$(date +%s)
-  displayName: 'Build the dev container'
+  displayName: 'Build: Dev Container'
+  
