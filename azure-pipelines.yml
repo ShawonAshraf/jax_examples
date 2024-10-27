@@ -16,6 +16,8 @@ steps:
   displayName: 'Install: Poetry'
 - script: poetry install
   displayName: 'Install: Dependencies'
+- script: poetry shell
+  displayName: 'Activate: env'
 - script: JAX_PLATFORMS=cpu poetry run sanity_check
   displayName: 'Check: Jax Array Creation'
 - script: docker build . --file devcontainer.Dockerfile --tag experiments:$(date +%s)
