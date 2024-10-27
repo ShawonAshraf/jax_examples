@@ -14,7 +14,7 @@ steps:
   displayName: 'Install Python 3.12'
 - script: curl -sSL https://install.python-poetry.org | python3.12 - 
   displayName: 'Install: Poetry'
-- script: poetry config virtualenvs.create false && poetry install
+- script: poetry install
   displayName: 'Install: Dependencies'
 - script: JAX_PLATFORMS=cpu poetry run sanity_check
   displayName: 'Check: Jax Array Creation'
