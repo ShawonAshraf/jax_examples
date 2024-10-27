@@ -10,14 +10,8 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: sudo add-apt-repository ppa:deadsnakes/ppa && sudo apt update && sudo apt install python3.12
-  displayName: 'Install Python 3.12'
-- script: curl -sSL https://install.python-poetry.org | python3.12 - 
-  displayName: 'Install: Poetry'
-- script: poetry env use python3.12 && poetry install
-  displayName: 'Install: Dependencies'
-- script: JAX_PLATFORMS=cpu poetry run sanity_check
-  displayName: 'Check: Jax Array Creation'
-- script: docker build . --file devcontainer.Dockerfile --tag experiments:$(date +%s)
+- script: docker build . --file ci.Dockerfile --tag jaxexamples:$(date +%s)
+  displayName: 'Build: CI Container'
+- script: docker build . --file devcontainer.Dockerfile --tag jaxexamples:$(date +%s)
   displayName: 'Build: Dev Container'
   
