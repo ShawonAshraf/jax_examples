@@ -14,10 +14,8 @@ steps:
   displayName: 'Install Python 3.12'
 - script: curl -sSL https://install.python-poetry.org | python3.12 - 
   displayName: 'Install: Poetry'
-- script: poetry install
+- script: poetry env use python3.12 && poetry install
   displayName: 'Install: Dependencies'
-- script: poetry shell
-  displayName: 'Activate: env'
 - script: JAX_PLATFORMS=cpu poetry run sanity_check
   displayName: 'Check: Jax Array Creation'
 - script: docker build . --file devcontainer.Dockerfile --tag experiments:$(date +%s)
