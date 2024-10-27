@@ -9,6 +9,4 @@ pool:
 steps:
 - script: docker build . --file ci.Dockerfile --tag jaxexamples:$(date +%s)
   displayName: 'Build: CI Container'
-- script: docker build . --file devcontainer.Dockerfile --tag jaxexamples:$(date +%s)
-  displayName: 'Build: Dev Container'
   
