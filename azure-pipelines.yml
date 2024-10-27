@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: add-apt-repository ppa:deadsnakes/ppa && apt update && apt install python3.12
+- script: sudo add-apt-repository ppa:deadsnakes/ppa && sudo apt update && sudo apt install python3.12
   displayName: 'Install Python 3.12'
 - script: curl -sSL https://install.python-poetry.org | python3.12 - 
   displayName: 'Install: Poetry'
