@@ -1,9 +1,9 @@
-FROM python:3.12.2-bullseye
+FROM continuumio/miniconda3:latest
 
-RUN pip install poetry
-WORKDIR /ci
-COPY . /ci
-RUN poetry config virtualenvs.create false
-RUN poetry install 
-RUN poetry run sanity_check
+COPY env.yml tmp/env.yml
+WORKDIR /workspaces
 
+
+RUN conda env create -f /tmp/env.yml 
+RUN conda activate jax-examples
+RUN python utils/sanity_check.py
