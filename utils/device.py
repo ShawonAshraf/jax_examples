@@ -1,9 +1,11 @@
-from jax.lib import xla_bridge
 from loguru import logger
+from jax import extend
+
+
 
 
 def log_device():
-    device = xla_bridge.get_backend().platform
+    device = extend.backend.get_backend().platform
 
     assert device in ["cpu", "gpu", "tpu"], logger.error(f"Unknown device: {device}")
 
