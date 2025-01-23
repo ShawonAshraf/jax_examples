@@ -4,6 +4,7 @@ COPY env.yml tmp/env.yml
 WORKDIR /workspaces
 
 
-RUN conda env create -f /tmp/env.yml 
-RUN conda activate jax-examples
-RUN python utils/sanity_check.py
+RUN conda env create -f /tmp/env.yml
+COPY ./utils/sanity_check.py .
+
+RUN conda run -n jax-examples python sanity_check.py
