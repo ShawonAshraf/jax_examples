@@ -11,5 +11,6 @@ ENV WANDB_API_KEY=$WANDB_API_KEY
 COPY env.yml tmp/env.yml
 WORKDIR /workspaces
 
+RUN conda install -c conda-forge cxx-compiler
 
 RUN conda env create -f /tmp/env.yml 
