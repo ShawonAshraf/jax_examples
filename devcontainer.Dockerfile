@@ -1,16 +1,12 @@
-FROM continuumio/miniconda3:latest
+FROM python:3.12.8-bookworm
 
+# creates directories for hf cache and wandb keys
 WORKDIR /workspaces
 RUN mkdir -p /workspaces/.cache/huggingface
 RUN chmod -R 777 /workspaces/.cache/huggingface
 ENV HF_HOME=/workspaces/.cache/huggingface
-ENV HF_TOKEN=$HF_TOKEN
-ENV WANDB_API_KEY=$WANDB_API_KEY
 
-
-COPY env.yml tmp/env.yml
-WORKDIR /workspaces
-
-RUN conda install -c conda-forge cxx-compiler
-
-RUN conda env create -f /tmp/env.yml 
+# env
+RUN pip install uv
+COPY pyproject.toml uv.lock ./
+RUN uv sync

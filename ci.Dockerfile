@@ -1,12 +1,12 @@
-FROM continuumio/miniconda3:latest
+FROM python:3.12.8-bookworm
 
-COPY env.yml tmp/env.yml
+# creates directories for hf cache and wandb keys
 WORKDIR /workspaces
+RUN mkdir -p /workspaces/.cache/huggingface
+RUN chmod -R 777 /workspaces/.cache/huggingface
+ENV HF_HOME=/workspaces/.cache/huggingface
 
-RUN conda install -c conda-forge cxx-compiler
-
-
-RUN conda env create -f /tmp/env.yml
-COPY ./utils/sanity_check.py .
-
-RUN conda run -n jax-examples python sanity_check.py
+# env
+RUN pip install uv
+COPY pyproject.toml uv.lock ./
+RUN uv sync
