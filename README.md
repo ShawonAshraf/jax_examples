@@ -33,5 +33,3 @@ source .venv/bin/activate
 # inside the project root
 jupyter lab
 ```
-
-Alternatively, you can use vscode or  the provided `devcontainer` with vscode to run the project in a containerised environment.
