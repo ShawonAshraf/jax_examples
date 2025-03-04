@@ -1,7 +1,7 @@
 [project]
 name = "jax-examples"
 version = "0.1.0"
-description = "Add your description here"
+description = "Deep Learning examples using the Jax ecosystem of libraries"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
