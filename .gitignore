@@ -7,7 +7,7 @@ data/
 
 # managed context
 managed_context/
-test_suit_analysis/
+test_suite_analysis/
 
 # Created by https://www.toptal.com/developers/gitignore/api/python
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
