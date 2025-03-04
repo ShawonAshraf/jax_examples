@@ -5,6 +5,9 @@ review_polarity/
 venv/
 data/
 
+# managed context
+managed_context/
+test_suit_analysis/
 
 # Created by https://www.toptal.com/developers/gitignore/api/python
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
