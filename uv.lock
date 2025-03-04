@@ -1002,6 +1002,19 @@ wheels = [
 ]
 
 [[package]]
+name = "imax"
+version = "0.0.1b11"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "jax" },
+    { name = "jaxlib" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a1/4e/64945ab4f06ab870a3dbb94a3259428eafd1d502c767dc5b6d5598a54169/imax-0.0.1b11.tar.gz", hash = "sha256:3f31d9b00825dbde36fab254bf78e525c8c4bc0ab022d1d8769202216bdbfc67", size = 20232 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/dc/7b/d6608631d87a9e9aad54c9eb9dcb8c66a9f540213a5cc38934736720b1bb/imax-0.0.1b11-py3-none-any.whl", hash = "sha256:e791215523e269d985770d0500e35c3bd5fd4cad06b3474b29988df4485b62ac", size = 20627 },
+]
+
+[[package]]
 name = "importlib-resources"
 version = "6.5.2"
 source = { registry = "https://pypi.org/simple" }
@@ -1193,6 +1206,7 @@ dependencies = [
     { name = "equinox" },
     { name = "flax" },
     { name = "gym" },
+    { name = "imax" },
     { name = "ipython" },
     { name = "jax", extra = ["cuda12"] },
     { name = "jax-dataloader" },
@@ -1220,6 +1234,7 @@ requires-dist = [
     { name = "equinox", specifier = ">=0.11.12" },
     { name = "flax", specifier = ">=0.10.4" },
     { name = "gym", specifier = ">=0.26.2" },
+    { name = "imax", specifier = ">=0.0.1b11" },
     { name = "ipython", specifier = ">=9.0.1" },
     { name = "jax", extras = ["cuda12"], specifier = ">=0.5.1" },
     { name = "jax-dataloader", specifier = ">=0.1.3" },
